@@ -5,6 +5,7 @@ import Login from './Pages/Login/Login';
 import ToolDetails from './Pages/ToolsDetails/ToolDetails';
 import Footer from './Shared/Footer';
 import Navbar from './Shared/Navbar';
+import NotFound from './Shared/NotFound';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/tool/:toolId' element={<ToolDetails></ToolDetails>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

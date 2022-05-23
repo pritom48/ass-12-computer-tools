@@ -2,7 +2,8 @@ import React from 'react';
 
 const BusinessSummery = () => {
     return (
-        <div>
+        <div className='my-20'>
+            <h1 className='text-5xl font-bold text-center py-20'>WHY WITH US</h1>
             <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4'>
                 <div class="card w-72 bg-base-100 shadow-xl">
                     <div class="card-body items-center text-center">
