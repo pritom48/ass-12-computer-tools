@@ -1,0 +1,56 @@
+[
+    {
+        "_id": 1,
+        "name": "Core i9",
+        "description": "Core i9 CPUs feature as few as six and as many as eighteen cores, with two threads per core when hyperthreading is enabled. Its frequencies range from 2.9 to 3.6 GHz, and up to 5.0 GHz when using Intel Turbo Boost.",
+        "price": 950,
+        "img": "https://asset.conrad.com/media10/isa/160267/c1/-/en/1882691_BB_00_FB/image.jpg",
+        "minOrderQuantity": 100,
+        "availableQuantity": 1080
+    },
+    {
+        "_id": 2,
+        "name": "Z690 Motherboard",
+        "description": "The best gaming motherboard is the connective tissue for your gaming PC build. It is useless on its own but vital for connecting all those expensive PC components you just bought. The motherboard has one of the most critical roles for any new PC build; it determines what parts you can use. ",
+        "price": 350,
+        "img": "https://www.gamingscan.com/wp-content/uploads/2020/07/Best-Gaming-Motherboard-1200x900.jpg",
+        "minOrderQuantity": 50,
+        "availableQuantity": 2083
+    },
+    {
+        "_id": 3,
+        "name": "AMD 5600G",
+        "description": "The AMD Ryzen 5 5600G Processor with Radeon Graphics is built in intelligence featuring 6 processor cores, 12 threads, and an astonishingly efficient 45-65W TDP. In this processor, It stands with 3.9GHz Base Clock, 4.4GHz Max Boost Clock, 3MB L2 Cache, 16MB L3 Cache with AM4 Package and TSMC 7nm FinFET CMOS.",
+        "price": 620,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_928841-MLA47573480145_092021-V.webp",
+        "minOrderQuantity": 250,
+        "availableQuantity": 1000
+    },
+    {
+        "_id": 4,
+        "name": "Core i5-10600K Processor",
+        "description": "This i5-10600K Processor comes with an Intel UHD Graphics 630 graphics. This new 10th gen Comet Lake microarchitecture is manufactured with the 14nm process that comes with six cores but lacks in HyperThreading. As this chip is updated to the latest BIOS revision, it nicely fits into any Intel 400-series motherboard.",
+        "price": 620,
+        "img": "https://tpucdn.com/cpu-specs/images/chips/2213-front.jpg",
+        "minOrderQuantity": 150,
+        "availableQuantity": 1200
+    },
+    {
+        "_id": 5,
+        "name": "Seagate FireCuda 510 1TB M.2 PCIe Gen3 ×4 NVMe Gaming SSD",
+        "description": "The Seagate FireCuda 510 comes with NVMe PCIe Gen3 ×4 Interface, Enhanced dynamic SLC cache, M.2 2280 Form Factor, Top-tier endurance. This SSD is specifically built for professional-level gamers. The Seagate FireCuda 510 SSD brings the intense speeds, lasting endurance and large capacity needed to accelerate PC performance. ",
+        "price": 250,
+        "img": "https://c1.neweggimages.com/ProductImageCompressAll300/B6ZFS2204220COD9646.jpg",
+        "minOrderQuantity": 500,
+        "availableQuantity": 2050
+    },
+    {
+        "_id": 6,
+        "name": "GT 1030 Low Profile D4 2GB Graphics Card",
+        "description": "The Gigabyte GeForce GT 1030 Low Profile D4 2GB Graphics Card is integrated with 2GB DDR4 64bit memory with Low Profile power consumption ability. This Gigabyte graphics Card has One-Click overclocking design that can be operated through the AORUS Graphics Engine. In OC Mode, the Gigabyte GT 1030 Low Profile D4 2GB Graphics Card has a base core clock of 1177MHz and a boost clock of 1417MHz. ",
+        "price": 300,
+        "img": "https://i.pcmag.com/imagery/articles/00Iy7r4lqzdcLM9vUdFIZoN-25.fit_lim.v1628272383.jpg",
+        "minOrderQuantity": 100,
+        "availableQuantity": 1500
+    }
+]

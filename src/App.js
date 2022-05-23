@@ -1,11 +1,21 @@
-
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
+import ToolDetails from './Pages/ToolsDetails/ToolDetails';
+import Footer from './Shared/Footer';
+import Navbar from './Shared/Navbar';
 
 function App() {
   return (
-    <div>
-      <h1 className='text-3xl text-red-500'>my name is pritam das</h1>
-      <button class="btn btn-info">Button</button>
+    <div className='px-10'>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/tool/:toolId' element={<ToolDetails></ToolDetails>}></Route>
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }
