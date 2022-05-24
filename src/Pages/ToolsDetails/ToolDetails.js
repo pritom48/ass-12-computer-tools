@@ -6,7 +6,7 @@ const ToolDetails = () => {
     const [tool, settool] = useState({})
 
     useEffect(() => {
-        const url = `/tool/${toolId}`
+        const url = `http://localhost:5000/tool/${toolId}`
         fetch(url)
             .then(res => res.json())
             .then(data => settool(data))

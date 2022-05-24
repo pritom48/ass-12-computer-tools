@@ -100,7 +100,7 @@ const Login = () => {
                         {singInError}
                         <input className='btn btn-info w-full max-w-xs' type="submit" value='Login' />
                     </form>
-                    <p><small>New to doctors Protal? <Link to='/signup' className='text-info'>Create a new account</Link></small></p>
+                    <p><small>New to AI Tools? <Link to='/signup' className='text-info'>Create a new account</Link></small></p>
                     <div className="divider">OR</div>
                     <button onClick={() => signInWithGoogle()} className="btn btn-info btn-outline">Continue With Google</button>
                 </div>
