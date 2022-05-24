@@ -24,6 +24,7 @@ const ToolDetails = () => {
         const order = {
             toolId: tool._id,
             toolName: tool.name,
+            price: tool.price,
             quantity: event.target.quantity.value,
             address: event.target.address.value,
             phone: event.target.number.value,
