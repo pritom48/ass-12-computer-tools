@@ -6,7 +6,7 @@ const ReviwesCard = ({ review }) => {
             <div class="card-body">
                 <h2 class="card-title text-3xl">{review.name}</h2>
                 <h2 class="">{review.location}</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>{review.des}</p>
                 <h3 className='font-bold'>Ratings: {review.ratings}Star</h3>
             </div>
         </div>
