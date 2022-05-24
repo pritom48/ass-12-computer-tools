@@ -8,7 +8,7 @@ const Reviwes = () => {
         fetch('http://localhost:5000/review')
             .then(res => res.json())
             .then(data => setreviews(data))
-    })
+    }, [])
 
     return (
         <section className='mx-10 my-10'>
