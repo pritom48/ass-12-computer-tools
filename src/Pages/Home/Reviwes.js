@@ -1,27 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReviwesCard from './ReviwesCard';
 
 const Reviwes = () => {
-    const reviews = [
-        {
-            _id: 1,
-            name: 'Winson Herry',
-            location: 'texus',
-            des: ""
-        },
-        {
-            _id: 2,
-            name: 'Ava Adam',
-            location: 'LA',
+    const [reviews, setreviews] = useState([]);
 
-        },
-        {
-            _id: 3,
-            name: 'Juli jsom',
-            location: 'californiya',
+    useEffect(() => {
+        fetch('http://localhost:5000/review')
+            .then(res => res.json())
+            .then(data => setreviews(data))
+    })
 
-        },
-    ]
     return (
         <section className='mx-10 my-10'>
             <h1 className='text-5xl font-bold text-center py-20'>CLIENTS REVIEWS</h1>
