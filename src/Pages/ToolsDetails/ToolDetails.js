@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 
@@ -15,6 +16,37 @@ const ToolDetails = () => {
             .then(res => res.json())
             .then(data => settool(data))
     }, [])
+
+
+
+    const handleOrdersSubmit = event => {
+        event.preventDefault();
+        const order = {
+            toolId: tool._id,
+            toolName: tool.name,
+            quantity: event.target.quantity.value,
+            address: event.target.address.value,
+            phone: event.target.number.value,
+            email: user.email,
+
+        }
+
+        fetch('http://localhost:5000/order', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(order)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                toast('Your Order is Confirmed')
+
+            })
+
+
+    }
 
     return (
         <div>
@@ -32,12 +64,14 @@ const ToolDetails = () => {
                 <div class="card w-96 bg-base-300 shadow-xl mb-20">
                     <div class="card-body items-center text-center">
                         <h2 class="card-title py-3">{tool.name}</h2>
-                        <input type="text" disabled value={user?.displayName || ''} placeholder="Type here" class="input w-full input-bordered max-w-xs" />
-                        <input type="text" disabled value={user?.email || ''} placeholder="Type here" class="input w-full input-bordered max-w-xs" />
-                        <input type="number" placeholder="Quantity" class="input w-full input-bordered max-w-xs" />
-                        <input type="text" placeholder="Address" class="input w-full input-bordered max-w-xs" />
-                        <input type="number" placeholder="Phone Number" class="input w-full input-bordered max-w-xs" />
-                        <input type="submit" value='Place order' class="btn btn-info w-full  max-w-xs" />
+                        <form className='' onSubmit={handleOrdersSubmit}>
+                            <input type="text" disabled value={user?.displayName || ''} placeholder="Type here" class="input w-full input-bordered max-w-xs my-3" />
+                            <input type="text" disabled value={user?.email || ''} placeholder="Type here" class="input w-full input-bordered max-w-xs my-3" />
+                            <input type="number" name='quantity' placeholder="Quantity" class="input w-full input-bordered max-w-xs my-3" />
+                            <input type="text" name='address' placeholder="Address" class="input w-full input-bordered max-w-xs my-3" />
+                            <input type="number" name='number' placeholder="Phone Number" class="input w-full input-bordered max-w-xs" />
+                            <input type="submit" value='Place order' class="btn btn-info w-full  max-w-xs my-3" />
+                        </form>
 
                     </div>
                 </div>

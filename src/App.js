@@ -1,5 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyOrders from './Pages/Dashboard/MyOrders';
+import MyReviews from './Pages/Dashboard/MyReviews';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequierAuth from './Pages/Login/RequierAuth';
@@ -8,6 +11,8 @@ import ToolDetails from './Pages/ToolsDetails/ToolDetails';
 import Footer from './Shared/Footer';
 import Navbar from './Shared/Navbar';
 import NotFound from './Shared/NotFound';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -22,9 +27,18 @@ function App() {
             <ToolDetails></ToolDetails>
           </RequierAuth>
         }></Route>
+        <Route path='/dashboard' element={
+          <RequierAuth>
+            <Dashboard></Dashboard>
+          </RequierAuth>
+        }>
+          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route path='reviews' element={<MyReviews></MyReviews>}></Route>
+        </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
