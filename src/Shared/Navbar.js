@@ -16,6 +16,7 @@ const Navbar = () => {
 
     const manuItems = <>
         <li><NavLink to='/'>HOME</NavLink></li>
+        <li><NavLink to='/blog'>BLOGS</NavLink></li>
         {
             user && <li><NavLink to='/dashboard'>DASHBOARD</NavLink></li>
         }
