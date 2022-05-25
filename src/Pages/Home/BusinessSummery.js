@@ -7,7 +7,7 @@ const BusinessSummery = () => {
             <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4'>
                 <div class="card w-72 bg-base-100 shadow-xl">
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title text-3xl font-bold">100+</h2>
+                        <h2 class="card-title text-3xl font-bold">100K+</h2>
                         <p>Customers</p>
                     </div>
                 </div>
