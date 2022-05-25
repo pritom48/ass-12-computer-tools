@@ -6,6 +6,7 @@ import MyReviews from './Pages/Dashboard/MyReviews';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequierAuth from './Pages/Login/RequierAuth';
+import RequierAdmin from './Pages/Login/RequierAdmin'
 import Signup from './Pages/Login/Signup';
 import ToolDetails from './Pages/ToolsDetails/ToolDetails';
 import Footer from './Shared/Footer';
@@ -35,7 +36,7 @@ function App() {
         }>
           <Route index element={<MyOrders></MyOrders>}></Route>
           <Route path='reviews' element={<MyReviews></MyReviews>}></Route>
-          <Route path='users' element={<AllUsers></AllUsers>}></Route>
+          <Route path='users' element={<RequierAdmin><AllUsers></AllUsers></RequierAdmin>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
