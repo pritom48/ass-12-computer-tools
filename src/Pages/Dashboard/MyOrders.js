@@ -3,10 +3,11 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../../Shared/Loading';
 
 const MyOrders = () => {
     const [orders, setorders] = useState([]);
-    const [user] = useAuthState(auth);
+    const [user, loading] = useAuthState(auth);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -28,7 +29,9 @@ const MyOrders = () => {
                 setorders(data)
             })
     }, [user])
-
+    if (loading) {
+        return <Loading></Loading>
+    }
 
     return (
         <div>

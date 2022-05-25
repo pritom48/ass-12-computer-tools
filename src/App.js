@@ -13,6 +13,7 @@ import Navbar from './Shared/Navbar';
 import NotFound from './Shared/NotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AllUsers from './Pages/Dashboard/AllUsers';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         }>
           <Route index element={<MyOrders></MyOrders>}></Route>
           <Route path='reviews' element={<MyReviews></MyReviews>}></Route>
+          <Route path='users' element={<AllUsers></AllUsers>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
