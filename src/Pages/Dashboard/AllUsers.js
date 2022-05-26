@@ -5,7 +5,7 @@ const AllUsers = () => {
     const [users, setusers] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/user', {
+        fetch('https://infinite-falls-58428.herokuapp.com/user', {
             method: 'GET',
             headers: {
                 'authoriztion': `Bearer ${localStorage.getItem('accessToken')}`

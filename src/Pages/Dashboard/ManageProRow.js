@@ -7,7 +7,7 @@ const ManageProRow = ({ allProduct }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/tool/${id}`
+            const url = `https://infinite-falls-58428.herokuapp.com/tool/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

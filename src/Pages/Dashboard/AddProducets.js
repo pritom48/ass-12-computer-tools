@@ -12,7 +12,7 @@ const AddProducets = () => {
             availableQuantity: event.target.availableQuantity.value,
             img: event.target.img.value
         }
-        fetch('http://localhost:5000/tool', {
+        fetch('https://infinite-falls-58428.herokuapp.com/tool', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

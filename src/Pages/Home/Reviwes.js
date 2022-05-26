@@ -5,7 +5,7 @@ const Reviwes = () => {
     const [reviews, setreviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://infinite-falls-58428.herokuapp.com/review')
             .then(res => res.json())
             .then(data => setreviews(data))
     }, [])

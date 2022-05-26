@@ -5,7 +5,7 @@ const ManageProducts = () => {
     const [allProducts, setallproducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/tool')
+        fetch('https://infinite-falls-58428.herokuapp.com/tool')
             .then(res => res.json())
             .then(data => setallproducts(data))
     })

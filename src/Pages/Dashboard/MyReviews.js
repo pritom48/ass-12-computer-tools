@@ -15,7 +15,7 @@ const MyReviews = () => {
             des: event.target.review.value
         }
 
-        fetch('http://localhost:5000/review', {
+        fetch('https://infinite-falls-58428.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

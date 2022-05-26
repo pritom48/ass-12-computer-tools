@@ -11,7 +11,7 @@ const MyOrders = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/order?email=${user.email}`, {
+        fetch(`https://infinite-falls-58428.herokuapp.com/order?email=${user.email}`, {
             method: 'GET',
             headers: {
                 'authoriztion': `Bearer ${localStorage.getItem('accessToken')}`
