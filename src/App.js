@@ -19,6 +19,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import AddProducets from './Pages/Dashboard/AddProducets';
 import ManageProducts from './Pages/Dashboard/ManageProducts';
 import Profile from './Pages/Dashboard/Profile';
+import ManageOrders from './Pages/Dashboard/ManageOrders';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path='users' element={<RequierAdmin><AllUsers></AllUsers></RequierAdmin>}></Route>
           <Route path='addproducts' element={<RequierAdmin><AddProducets></AddProducets></RequierAdmin>}></Route>
           <Route path='manage' element={<RequierAdmin><ManageProducts></ManageProducts></RequierAdmin>}></Route>
+          <Route path='manageorder' element={<RequierAdmin><ManageOrders></ManageOrders></RequierAdmin>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
