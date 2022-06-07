@@ -10,7 +10,7 @@
 6. Firebase has been used to authenticate the user. Data will be loaded and saved in the MongoDB database.
 
 ## Use teach
-  React.js, Javascript, ES6, React Router, Firebase, ExpressJs, NodeJs, MongoDB, JWT, HTML5, CSS3, Bootstrap
+  React.js, Javascript, ES6, React Router, Firebase, ExpressJs, NodeJs, MongoDB, JWT, HTML5, CSS3, Tailwind, React Hook, React Hook Form, React Query
 
 In the project directory, you can run:
 
