@@ -1,8 +1,16 @@
 # Getting Started with Create React App
+ [AI Tools ](https://computer-tools-502a0.web.app/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+1. It is a tools manufacturer website.
+2.  A user can buy any tool. Users can give a review that shows on the home page.
+3. Only an admin can make an admin. 
+4. Only Amin can add products, manage products and delete products.
+5. User can’t make an admin. 
+6. Firebase has been used to authenticate the user. Data will be loaded and saved in the MongoDB database.
 
-## Available Scripts
+## Use teach
+  React.js, Javascript, ES6, React Router, Firebase, ExpressJs, NodeJs, MongoDB, JWT, HTML5, CSS3, Bootstrap
 
 In the project directory, you can run:
 
